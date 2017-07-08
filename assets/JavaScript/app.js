@@ -116,6 +116,9 @@ function initApp() {
             console.log(providerData);
 
             location.href = "search.html";
+             window.onload = function() {
+                initApp2();
+             };
         }else {
           document.getElementById('quickstart-sign-in').textContent = 'Sign in';
           console.log("signed out");
