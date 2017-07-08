@@ -41,9 +41,6 @@ var theResult ="";
 var foundKey = "";
 var userEmail = "";
 //=================================== Sign up/in/out Process =================
- window.onload = function() {
-            initApp();
-        };
 function toggleSignIn() {
     if (firebase.auth().currentUser) {
         firebase.auth().signOut();
@@ -116,9 +113,6 @@ function initApp() {
             console.log(providerData);
 
             location.href = "search.html";
-             window.onload = function() {
-                initApp2();
-             };
         }else {
           document.getElementById('quickstart-sign-in').textContent = 'Sign in';
           console.log("signed out");
