@@ -41,6 +41,9 @@ var theResult ="";
 var foundKey = "";
 var userEmail = "";
 //=================================== Sign up/in/out Process =================
+ window.onload = function() {
+            initApp();
+        };
 function toggleSignIn() {
     if (firebase.auth().currentUser) {
         firebase.auth().signOut();
